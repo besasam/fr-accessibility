@@ -1,0 +1,17 @@
+{
+  "name": "Flight Rising Accessibility Extension",
+  "version": "1.0",
+  "description": "Little tweaks to the Flight Rising interface.",
+  "manifest_version": 2,
+  "permissions": ["tabs", "http://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://www.flightrising.com/*", "http://flightrising.com/*"],
+      "js": ["www.js"]
+    },
+    {
+      "matches": ["http://www1.flightrising.com/*"],
+      "js": ["www1.js"]
+    }
+  ]
+}
